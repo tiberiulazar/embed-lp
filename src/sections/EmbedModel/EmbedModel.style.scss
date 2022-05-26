@@ -1,0 +1,33 @@
+@import "../../Style/Vars.scss";
+@import "../../Style/Mixin.scss";
+
+.embed-model {
+  background-image: linear-gradient(to right, $brand-pink, $brand-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include S {
+    padding: 6rem 4rem;
+  }
+
+  &__title {
+    color: white;
+    margin-bottom: 8rem;
+
+    @include S {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    @include S {
+      flex-direction: column;
+    }
+  }
+}

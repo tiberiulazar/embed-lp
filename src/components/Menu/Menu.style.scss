@@ -1,0 +1,37 @@
+@import "../../Style/Mixin.scss";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background-color: white;
+
+  @include M {
+    padding: 3rem;
+  }
+
+  &__logo {
+    height: auto;
+    width: 15rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    @include S {
+      display: none;
+    }
+  }
+
+  &__mobile-toggle {
+    display: none;
+
+    @include S {
+      display: block;
+    }
+  }
+}

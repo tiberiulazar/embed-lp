@@ -1,0 +1,75 @@
+@import "../../Style/Mixin.scss";
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+
+  @include S {
+    height: auto;
+    padding-bottom: 12rem;
+    padding-top: 12rem;
+  }
+
+  &__container {
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__info {
+    flex-basis: 30%;
+    text-align: left;
+    margin-left: 8rem;
+
+    @include M {
+      flex-basis: 40%;
+      margin-left: 4rem;
+    }
+
+    @include S {
+      flex-basis: 100%;
+      order: 2;
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0;
+  }
+
+  &__paragraph {
+    margin-bottom: 2rem;
+  }
+
+  &__illustration {
+    flex-basis: 70%;
+    @include M {
+      flex-basis: 60%;
+    }
+
+    @include S {
+      flex-basis: 100%;
+      order: 1;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__info-tip {
+    max-width: 84rem;
+    align-self: center;
+
+    @include S {
+      display: none;
+    }
+  }
+}

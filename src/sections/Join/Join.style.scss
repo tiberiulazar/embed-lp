@@ -1,0 +1,27 @@
+@import "../../Style/Mixin.scss";
+
+.join {
+  background-image: url("../../assets/Join_background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 9rem;
+
+  @include S {
+    padding-top: 44rem;
+  }
+
+  &__subtitle {
+    margin-top: auto;
+    color: white;
+    margin-bottom: 6rem;
+    font-size: 8.4rem;
+
+    @include S {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

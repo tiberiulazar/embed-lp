@@ -1,0 +1,60 @@
+@import "../../Style/Vars.scss";
+@import "../../Style/Mixin.scss";
+
+.step-card {
+  max-width: 30rem;
+
+  @include S {
+    max-width: unset;
+    width: 100%;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10rem;
+
+    @include L {
+      margin-right: 6rem;
+    }
+
+    @include M {
+      margin-right: 1rem;
+    }
+    @include S {
+      margin-right: 0;
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__header {
+    margin: 2.5rem 0;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid $light-grey;
+    @include S {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+
+    @include S {
+      margin-left: 2rem;
+    }
+  }
+
+  &__list {
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    line-height: 1.55;
+    margin-left: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

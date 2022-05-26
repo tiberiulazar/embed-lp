@@ -1,0 +1,18 @@
+@import "../../Style/Vars.scss";
+@import "../../Style/Mixin.scss";
+
+.questions {
+  background-color: $dark-grey;
+  color: white;
+
+  display: none;
+
+  @include S {
+    display: block;
+  }
+
+  &__subtitle {
+    margin-bottom: 4rem;
+    font-size: 3.4rem;
+  }
+}

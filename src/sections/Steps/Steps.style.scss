@@ -1,0 +1,52 @@
+@import "../../Style/Mixin.scss";
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include S {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__subtitle {
+    margin-bottom: 6rem;
+
+    @include S {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 6rem;
+
+    @include S {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      width: 80%;
+    }
+  }
+
+  &__list {
+    align-items: flex-start;
+    margin-bottom: 6rem;
+  }
+
+  &__cta-text {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin-bottom: 6rem;
+
+    @include M {
+      margin-bottom: 4rem;
+    }
+
+    @include S {
+      margin-bottom: 3rem;
+    }
+  }
+}

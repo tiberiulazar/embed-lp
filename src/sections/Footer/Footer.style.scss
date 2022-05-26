@@ -1,0 +1,123 @@
+@import "../../Style/Vars.scss";
+@import "../../Style/Mixin.scss";
+
+.footer {
+  height: 100vh;
+  background-color: $purple;
+  padding: 16rem 24rem;
+
+  @include S {
+    height: auto;
+    padding: 8rem;
+  }
+
+  &__container {
+    align-items: flex-start;
+  }
+
+  &__credits {
+    flex-basis: 50%;
+    text-align: left;
+
+    @include S {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    text-align: left;
+    flex-basis: 50%;
+    padding-right: 12rem;
+
+    @include M {
+      padding-left: 4rem;
+      padding-right: 6rem;
+    }
+
+    @include S {
+      padding: 0;
+      flex-basis: 100%;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__credentials {
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 2rem;
+
+    @include S {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include S {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 6rem;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+    color: white;
+  }
+
+  &__socials {
+    display: flex;
+    margin-bottom: 4rem;
+
+    @include S {
+      justify-content: center;
+    }
+  }
+
+  &__social-media {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+
+    @include S {
+      justify-content: center;
+    }
+  }
+
+  &__menu-item {
+    padding: 0px 10px;
+    &:not(:last-child) {
+      border-right: 1px solid white;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &__menu-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: white;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+    }
+  }
+}

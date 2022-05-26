@@ -1,0 +1,16 @@
+.question {
+  text-align: left;
+
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__answer {
+    font-size: 1.6rem;
+  }
+}
